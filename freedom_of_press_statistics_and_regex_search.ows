@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(288.0, 340.0)" />
+		<node id="1" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(59.0, 341.0)" />
+		<node id="2" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(178.0, 340.5)" />
+		<node id="3" name="Statistics" qualified_name="orangecontrib.text.widgets.owstatistics.OWStatistics" project_name="Orange3-Text" version="" title="Statistics" position="(407.0, 340.0)" />
+		<node id="4" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(561.0, 338.0)" />
+		<node id="5" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Python Script" position="(724.0, 337.0)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (1)" position="(883.0, 339.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="4" sink_node_id="5" source_channel="Selected Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="5" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="0" sink_node_id="3" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+		<link id="4" source_node_id="2" sink_node_id="0" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="5" source_node_id="3" sink_node_id="4" source_channel="Corpus" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(101.00000000000003, 197.0)" end="(94.00000000000003, 292.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(42.0, 106.0, 150.0, 92.0)" font-family="MS Shell Dlg 2" font-size="16">File =
+trykfri_data_csv</text>
+		<arrow id="2" start="(195.0, 276.0)" end="(189.0, 308.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(123.0, 209.0, 150.0, 72.0)" font-family="MS Shell Dlg 2" font-size="16">Ryd lidt op. Du skal ikke bruge alle variablerne</text>
+		<arrow id="4" start="(293.0, 204.0)" end="(294.0, 293.0)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(242.0, 142.0, 150.0, 52.0)" font-family="MS Shell Dlg 2" font-size="16">Konverter til et korpus objekt</text>
+		<arrow id="6" start="(408.0, 269.99999999999994)" end="(410.0, 303.99999999999994)" fill="#C1272D" />
+		<text id="7" type="text/plain" rect="(378.0, 114.0, 150.0, 152.0)" font-family="MS Shell Dlg 2" font-size="16">Tilføj statistik. 
+Wordcount (det totale antal ord i hver tekst) og Regex (antal gange   regex mønsteret matcher) </text>
+		<text id="8" type="text/plain" rect="(755.0, 516.0, 150.0, 32.0)" font-family="MS Shell Dlg 2" font-size="16">Inspicer data</text>
+		<arrow id="9" start="(717.0, 267.00000000000017)" end="(719.0000000000001, 306.00000000000017)" fill="#C1272D" />
+		<text id="10" type="text/plain" rect="(565.0, 115.0, 462.0, 152.0)" font-family="MS Shell Dlg 2" font-size="16">Konverter til Orange table til Pandas Dataframe. Beregn forhold mellem total antal ord og regex mønsteret. 
+
+Kolonnenavnet skal ændres.
+
+Konverter Pandas Dataframe til Orange table og output tabellen. </text>
+		<arrow id="11" start="(525.0000000000001, 498.0)" end="(550.0000000000001, 400.0)" fill="#C1272D" />
+		<arrow id="12" start="(851.0, 510.0)" end="(886.0, 392.0)" fill="#C1272D" />
+		<text id="13" type="text/plain" rect="(438.0, 499.0, 150.0, 92.0)" font-family="MS Shell Dlg 2" font-size="16">Sorter Regex kolonnen og vælge de 15 højeste scorres</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVqw0AAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojDtD
+Oi9Vc2Vycy9sYWtqL2RhdGFzcHJpbnQgMjAyMy9hcmtpdi9weXRob24vdHJ5a2ZyaV9kYXRhLmNz
+dpSMDGFuZGVyc2VuLnRhYpSMEWJvb2stZXhjZXJwdHMudGFilIwYZ3JpbW0tdGFsZXMtc2VsZWN0
+ZWQudGFilIwYZWxlY3Rpb24tdHdlZXRzLTIwMTYudGFilIwXZnJpZW5kcy10cmFuc2NyaXB0cy50
+YWKUZYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAACyQAAAEcAAAUiAAACAQAAAsoA
+AABlAAAFIQAAAgAAAAAAAAAAAAYAAAACygAAAGUAAAUhAAACAJSMC19fdmVyc2lvbl9flEsBjBBj
+b250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmB
+lH2UKIwGdmFsdWVzlH2UKIwIbGFuZ3VhZ2WUjAZEYW5pc2iUSv7///+GlIwOdGl0bGVfdmFyaWFi
+bGWUjAV0aXRlbJRLZ4aUjAp1c2VkX2F0dHJzlF2UjAdpbmRob2xklEtnhpRhSv3///+GlGgMSwF1
+jAphdHRyaWJ1dGVzlH2UKIwDw6VylEsBjAp1ZGdpdmVyX3N0lEsBdYwFbWV0YXOUfZQojAV0aXRl
+bJRLA4wHaW5kaG9sZJRLA4wIb3BoYXZfc3SUSwN1jA5kb2N1bWVudHNfaGFzaJSKEEYwf/ThWuMR
+vQ8GBSsmVEpoFk51YmgRKYGUfZQoaBR9lChoFowGRGFuaXNolEr+////hpRoGYwSZWZ0ZXJuYXZu
+X29waGF2X3N0lEtnhpRoHF2UjAdpbmRob2xklEtnhpRhSv3///+GlGgMSwF1aCF9lCiMCnVkZ2l2
+ZXJfc3SUSwGMA8OlcpRLAXVoJX2UKIwHaW5kaG9sZJRLA4wSZWZ0ZXJuYXZuX29waGF2X3N0lEsD
+dWgqihEVwOqskjbMRWaLMIS/uyTnAGgWTnViaBEpgZR9lChoFH2UKGgWaBdK/v///4aUaBmMUnLD
+pmtrZXxiaW5kfGJvZ3zDpXJ8dGl0ZWx8dWRnaXZlcnxmb3JtYXR8b3BoYXZ8aW5kaG9sZHx0ZXh0
+X2lkfG9waGF2X3N0fHVkZ2l2ZXJfc3SUS2eGlGgcXZRoQEtnhpRhSv3///+GlGgMSwF1aCF9lGgl
+fZSMUnLDpmtrZXxiaW5kfGJvZ3zDpXJ8dGl0ZWx8dWRnaXZlcnxmb3JtYXR8b3BoYXZ8aW5kaG9s
+ZHx0ZXh0X2lkfG9waGF2X3N0fHVkZ2l2ZXJfc3SUSwNzaCqKESzzH7c4rpPW0cW+QG+CQaIAaBZO
+dWJoESmBlH2UKGgUfZQojAhsYW5ndWFnZZRoF0r+////hpSMDnRpdGxlX3ZhcmlhYmxllGgnS2eG
+lIwKdXNlZF9hdHRyc5RdlChoJ0tnhpRoKEtnhpRoKUtnhpRlSv3///+GlGgMSwF1aCF9lGgkSwFz
+aCV9lChoJ0sDaChLA2gpSwNoI0sBdWgqihBGMH/04VrjEb0PBgUrJlRKaBZOdWJoESmBlH2UKGgU
+fZQoaEtoF0r+////hpRoTWgnS2eGlGhPXZQoaCdLZ4aUaChLZ4aUaClLZ4aUZUr9////hpRoDEsB
+dWghfZRoJX2UKGgnSwNoKEsDaClLA2gkSwFoI0sBdWgqihBGMH/04VrjEb0PBgUrJlRKaBZOdWJo
+ESmBlH2UKGgUfZQoaEtoF0r+////hpRoTWgnS2eGlGhPXZQoaCdLZ4aUaChLZ4aUaClLZ4aUZUr9
+////hpRoDEsBdWghfZQojAZyw6Zra2WUSwGMBGJpbmSUSwKMA2JvZ5RLAowDw6VylEsBjAp1ZGdp
+dmVyX3N0lEsBdWglfZQojAV0aXRlbJRLA4wHdWRnaXZlcpRLA4wGZm9ybWF0lEsDjAVvcGhhdpRL
+A4wHaW5kaG9sZJRLA4wHdGV4dF9pZJRLA4wIb3BoYXZfc3SUSwN1aCqKEEYwf/ThWuMRvQ8GBSsm
+VEpoFk51YmgRKYGUfZQoaBR9lChoS2gXSv7///+GlGhNaCdLZ4aUaE9dlChoJ0tnhpRoKEtnhpRo
+KUtnhpRlSv3///+GlGgMSwF1aCF9lGgjSwFzaCV9lChoJ0sDaChLA2gpSwNoJEsBdWgqihBGMH/0
+4VrjEb0PBgUrJlRKaBZOdWJoESmBlH2UKGgUfZQoaEtoF0r+////hpRoTWgnS2eGlGhPXZQoaCdL
+Z4aUaChLZ4aUaClLZ4aUZUr9////hpRoDEsBdWghfZQoaCNLAWgkSwF1aCV9lChoJ0sDjAd1ZGdp
+dmVylEsDaChLA2gpSwN1aCqKEEYwf/ThWuMRvQ8GBSsmVEpoFk51YmgRKYGUfZQoaBR9lChoS2gX
+Sv7///+GlGhNaCdLZ4aUaE9dlChoJ0tnhpRoKEtnhpRoKUtnhpRlSv3///+GlGgMSwF1aCF9lCho
+I0sBaCRLAXVoJX2UKGgnSwNok0sDjAVvcGhhdpRLA2goSwNoKUsDdWgqihBGMH/04VrjEb0PBgUr
+JlRKaBZOdWJoESmBlH2UKGgUfZQoaEtoF0r+////hpRoTWgnS2eGlGhPXZQoaCdLZ4aUaChLZ4aU
+aClLZ4aUZUr9////hpRoDEsBdWghfZQoaCNLAWgkSwF1aCV9lChoJ0sDaJNLA2igSwNoKEsDjAd0
+ZXh0X2lklEsDaClLA3VoKooQRjB/9OFa4xG9DwYFKyZUSmgWTnViaBEpgZR9lChoFH2UKGhLaBdK
+/v///4aUaE1oJ0tnhpRoT12UKGgnS2eGlGgoS2eGlGgpS2eGlGVK/f///4aUaAxLAXVoIX2UKGgj
+SwFoJEsBdWglfZQoaCdLA2iTSwOMBmZvcm1hdJRLA2igSwNoKEsDaK1LA2gpSwN1aCqKEEYwf/Th
+WuMRvQ8GBSsmVEpoFk51YmgRKYGUfZQoaBR9lChoS2gXSv7///+GlGhNaCdLZ4aUaE9dlChoJ0tn
+hpRoKEtnhpRoKUtnhpRlSv3///+GlGgMSwF1aCF9lCiMBnLDpmtrZZRLAWgjSwFoJEsBdWglfZQo
+aCdLA2iTSwNouksDaKBLA2goSwNorUsDaClLA3VoKooQRjB/9OFa4xG9DwYFKyZUSmgWTnViaBEp
+gZR9lChoFH2UKGhLaBdK/v///4aUaE1oJ0tnhpRoT12UKGgnS2eGlGgoS2eGlGgpS2eGlGVK/f//
+/4aUaAxLAXVoIX2UKIwDYm9nlEsCaMZLAWgjSwFoJEsBdWglfZQoaCdLA2iTSwNouksDaKBLA2go
+SwNorUsDaClLA3VoKooQRjB/9OFa4xG9DwYFKyZUSmgWTnViaBEpgZR9lChoFH2UKIwIbGFuZ3Vh
+Z2WUTkr+////hpSMDnRpdGxlX3ZhcmlhYmxllIwFdGl0ZWyUS2eGlIwKdXNlZF9hdHRyc5RdlCiM
+A8OlcpRLZ4aUaNtLZ4aUjAd1ZGdpdmVylEtnhpSMB2luZGhvbGSUS2eGlIwFb3BoYXaUS2eGlIwG
+Zm9ybWF0lEtnhpRlSv3///+GlGgMSwF1aCF9lCiMBnLDpmtrZZRLAYwEYmluZJRLAowDYm9nlEsC
+jAd0ZXh0X2lklEsCdWglfZQojAPDpXKUSwOMBXRpdGVslEsDjAd1ZGdpdmVylEsDjAZmb3JtYXSU
+SwOMBW9waGF2lEsDjAdpbmRob2xklEsDdXViaBEpgZR9lChoFH2UKIwOdGl0bGVfdmFyaWFibGWU
+jD5yw6Zra2V8YmluZHxib2d8w6VyfHRpdGVsfHVkZ2l2ZXJ8Zm9ybWF0fG9waGF2fGluZGhvbGR8
+dGV4dF9pZJRLZ4aUjAp1c2VkX2F0dHJzlF2UaPtLZ4aUYUr9////hpRoDEsBdWghfZRoJX2UjD5y
+w6Zra2V8YmluZHxib2d8w6VyfHRpdGVsfHVkZ2l2ZXJ8Zm9ybWF0fG9waGF2fGluZGhvbGR8dGV4
+dF9pZJRLA3N1YmgRKYGUfZQoaBR9lCho+owFVGl0ZWyUS2eGlGj9XZSMB2NvbnRlbnSUS2eGlGFK
+/f///4aUaAxLAXVoIX2UKIwIUmVmLm5yLiCUSwSMB1RleHRfaWSUSwJ1aCV9lCiMB1VkZy7DpXKU
+SwOMBVRpdGVslEsDjBVCb2d0cnlra2VyL2ZvcmzDpmdnZXKUSwOMDUZvcm1hdCwgc2lkZXKUSwOM
+CUZvcmZhdHRlcpRLA4wJQXZlcnRlcmV0lEsDjARwYXRolEsDjAdjb250ZW50lEsDdXViaBEpgZR9
+lChoFH2UKIwOdGl0bGVfdmFyaWFibGWUTkr+////hpSMCnVzZWRfYXR0cnOUXZSMCFJlZi5uci4g
+lEtnhpRhSv3///+GlGgMSwF1aCF9lIwHVGV4dF9pZJRLAnNoJX2UKGogAQAASwOMBVRpdGVslEsD
+jBVCb2d0cnlra2VyL2ZvcmzDpmdnZXKUSwOMDUZvcm1hdCwgc2lkZXKUSwOMCUZvcmZhdHRlcpRL
+A4wHVWRnLsOlcpRLA4wJQXZlcnRlcmV0lEsDdXViZXUu
+</properties>
+		<properties node_id="1" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/Users/lakj/datasprint 2023/arkiv/python/trykfri_data.csv'}, {'encoding': 'utf-8', 'delimiter': '|', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 12, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/Users/lakj/datasprint 2023/arkiv/python/trykfri_data_csv_after_or8.csv'}, {'encoding': 'utf-8', 'delimiter': '|', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 12, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/Users/lakj/datasprint 2023/master/data/Trykkefrihedens Skrifter/trykfri_data_csv_after_or8.csv'}, {'encoding': 'utf-8', 'delimiter': '|', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 12, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/Users/lakj/datasprint 2023/arkiv/python/trykfri_data_csv_after_or5.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 12, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/lakj/datasprint 2023/master/data/Trykkefrihedens Skrifter', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x8d\x00\x00\x01\x9e\x00\x00\x03\xa4\x00\x00\x02\xf0\x00\x00\x02\x8e\x00\x00\x01\xbc\x00\x00\x03\xa3\x00\x00\x02\xef\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\x8e\x00\x00\x01\xbc\x00\x00\x03\xa3\x00\x00\x02\xef', '__version__': 3}</properties>
+		<properties node_id="2" format="pickle">gASVfAQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAl0AAAB3
+AAAEZwAAAocAAAJeAAAAlQAABGYAAAKGAAAAAAAAAAAGAAAAAl4AAACVAAAEZgAAAoaUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMBGJpbmSUSwKGlIwJYXZhaWxhYmxllEsAhpSMA2JvZ5RLAoaUaBVL
+AYaUjAZyw6Zra2WUSwGGlGgVSwKGlIwGZm9ybWF0lEsDhpRoFUsDhpSMB3RleHRfaWSUSwOGlGgV
+SwSGlIwFb3BoYXaUSwOGlGgVSwWGlIwHdWRnaXZlcpRLA4aUaBVLBoaUjAp1ZGdpdmVyX3N0lEsB
+hpSMCWF0dHJpYnV0ZZRLAIaUjAPDpXKUSwGGlGgrSwGGlIwFdGl0ZWyUSwOGlIwEbWV0YZRLAIaU
+jAdpbmRob2xklEsDhpRoMksBhpSMCG9waGF2X3N0lEsDhpRoMksChpR1Sv7///+GlGgHSwF1jAph
+dHRyaWJ1dGVzlH2UKIwGcsOma2tllEsBjARiaW5klEsCjANib2eUSwKMA8OlcpRLAYwKdWRnaXZl
+cl9zdJRLAXWMBW1ldGFzlH2UKIwFdGl0ZWyUSwOMB3VkZ2l2ZXKUSwOMBmZvcm1hdJRLA4wFb3Bo
+YXaUSwOMB2luZGhvbGSUSwOMB3RleHRfaWSUSwOMCG9waGF2X3N0lEsDdXViaAwpgZR9lChoD32U
+KGgRfZQojARiaW5klEsChpRoFUsAhpSMA2JvZ5RLAoaUaBVLAYaUjAZyw6Zra2WUSwGGlGgVSwKG
+lIwHdGV4dF9pZJRLA4aUaBVLA4aUjAVvcGhhdpRLA4aUaBVLBIaUjAd1ZGdpdmVylEsDhpRoFUsF
+hpSMCG9waGF2X3N0lEsDhpRoFUsGhpSMBXRpdGVslEsDhpRoFUsHhpSMCnVkZ2l2ZXJfc3SUSwGG
+lGgrSwCGlIwDw6VylEsBhpRoK0sBhpSMB2luZGhvbGSUSwOGlGgySwCGlIwSZWZ0ZXJuYXZuX29w
+aGF2X3N0lEsDhpRoMksBhpR1Sv7///+GlGgHSwF1aDt9lCiMBnLDpmtrZZRLAYwEYmluZJRLAowD
+Ym9nlEsCjAPDpXKUSwGMCnVkZ2l2ZXJfc3SUSwF1aEJ9lCiMBXRpdGVslEsDjAd1ZGdpdmVylEsD
+jAVvcGhhdpRLA4wHaW5kaG9sZJRLA4wHdGV4dF9pZJRLA4wIb3BoYXZfc3SUSwOMEmVmdGVybmF2
+bl9vcGhhdl9zdJRLA3V1YmV1Lg==
+</properties>
+		<properties node_id="3" format="pickle">gASVXQMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAD///m4AAABwv//+8IAAAMl///5uQAAAdv///vBAAADJAAAAAEAAAAAB4D///m5
+AAAB2///+8EAAAMklIwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFu
+Z2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAxhY3RpdmVf
+cnVsZXOUXZQoSwCMAJSGlEsMjBVyZVt5fGl8al1zW2V8dF1bZXxyXT+UhpRlaARLAXWMCmF0dHJp
+YnV0ZXOUKIwGcsOma2tllEsBhpSMBGJpbmSUSwKGlIwDYm9nlEsChpSMA8OlcpRLAYaUjAp1ZGdp
+dmVyX3N0lEsBhpR0lIwFbWV0YXOUKIwFdGl0ZWyUSwOGlIwHdWRnaXZlcpRLA4aUjAZmb3JtYXSU
+SwOGlIwFb3BoYXaUSwOGlIwHaW5kaG9sZJRLA4aUjAd0ZXh0X2lklEsDhpSMCG9waGF2X3N0lEsD
+hpR0lIwKY2xhc3NfdmFyc5QpdWJoCSmBlH2UKGgMfZQoaA5dlChLAGgQhpRLAWgQhpRLDIwUcmVb
+eXxpfGpdc1tlfHRdW2V8cl2UhpRlaARLAXVoFIwKdWRnaXZlcl9zdJRLAYaUjAPDpXKUSwGGlIaU
+aCCMB2luZGhvbGSUSwOGlIwSZWZ0ZXJuYXZuX29waGF2X3N0lEsDhpSGlGgwKXViaAkpgZR9lCho
+DH2UKGgOXZQoSwBoEIaUSwFoEIaUZWgESwF1aBQpaCCMUnLDpmtrZXxiaW5kfGJvZ3zDpXJ8dGl0
+ZWx8dWRnaXZlcnxmb3JtYXR8b3BoYXZ8aW5kaG9sZHx0ZXh0X2lkfG9waGF2X3N0fHVkZ2l2ZXJf
+c3SUSwOGlIWUaDApdWJoCSmBlH2UKGgMfZQojAxhY3RpdmVfcnVsZXOUXZQoSwBoEIaUSwyMFXJl
+W3l8aXxqXXNbZXx0XVtlfHJdP5SGlGVoBEsBdWgUaB1LAYaUaBtLAYaUhpRoIGghSwOGlGgpSwOG
+lGgtSwOGlIeUaDApdWJldS4=
+</properties>
+		<properties node_id="4" format="literal">{'auto_commit': True, 'color_by_class': False, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x03\x00\x00\x00\x10\x00\x00\x06\x00\x00\x00\x03F\x00\x00\x00\x04\x00\x00\x00.\x00\x00\x05\xff\x00\x00\x03E\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x04\x00\x00\x00.\x00\x00\x05\xff\x00\x00\x03E', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': False, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="5" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x8d\x00\x00\x00@\x00\x00\x05t\x00\x00\x03\x17\x00\x00\x00\x8e\x00\x00\x00^\x00\x00\x05s\x00\x00\x03\x16\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x8e\x00\x00\x00^\x00\x00\x05s\x00\x00\x03\x16', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, DiscreteVariable\n\ndomain = Domain([ContinuousVariable("age"),\n                 ContinuousVariable("height"),\n                 DiscreteVariable("gender", values=("M", "F"))])\narr = np.array([\n  [25, 186, 0],\n  [30, 164, 1]])\nout_data = Table.from_numpy(domain, arr)\n', 'filename': None}, {'name': 'pandas', 'script': "from Orange.data import Domain, Table\nfrom Orange.data.pandas_compat import table_from_frame, table_to_frame\n\nnew_data = in_data.copy()\ndf = table_to_frame(new_data)\nprint (df.columns)\ndf['kw_1_rel_fre'] = df.iloc[:, -1:] / df['Word count']\n\nout_data = table_from_frame(df)", 'filename': None}], 'scriptText': "from Orange.data import Domain, Table\nfrom Orange.data.pandas_compat import table_from_frame, table_to_frame\n\nnew_data = in_data.copy()\ndf = table_to_frame(new_data)\nprint (df.columns)\ndf['kw_1_rel_fre'] = df['Regex re[y|i|j]s[e|t][e|r]'] / df['Word count']\n\nout_data = table_from_frame(df)", 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x9d\x00\x00\x00]\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': False, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xf9\xfd\x00\x00\x00o\xff\xff\xff\xfb\x00\x00\x03\x9f\xff\xff\xf9\xfe\x00\x00\x00\x88\xff\xff\xff\xfa\x00\x00\x03\x9e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xf9\xfe\x00\x00\x00\x88\xff\xff\xff\xfa\x00\x00\x03\x9e', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': False, 'show_distributions': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
